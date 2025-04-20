@@ -1,3 +1,5 @@
+let runeClue = false;
+let rockitem = false;
 class Start extends Scene {
     create() {
         this.engine.setTitle(this.engine.storyData.Title); // TODO: replace this text using this.engine.storyData to find the story title
@@ -11,13 +13,31 @@ class Start extends Scene {
 
 class Location extends Scene {
     create(key) {
-        let locationData = this.engine.storyData.Locations[key]; // TODO: use `key` to get the data object for the current story location
+        let locationData = this.engine.storyData.Locations[key];
         this.engine.show(locationData.Body); // TODO: replace this text by the Body of the location data
         
-        if(locationData.Choices) { // TODO: check if the location has any Choices
+        if(locationData.Hidden) { // TODO: check if the location has any Choices
             for(let choice of locationData.Choices) { // TODO: loop over the location's Choices
-                this.engine.addChoice(choice.Text, choice); // TODO: use the Text of the choice
-                // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
+                this.engine.addChoice(choice.Text, choice);
+            }
+            if (runeClue && key == "Magic Room"){
+                for (let choice of locationData.Hidden){
+                    this.engine.addChoice(choice.Text, choice);
+                }
+            } else if (rockitem && key == "Rock Room"){
+                for (let choice of locationData.Hidden){
+                    this.engine.addChoice(choice.Text, choice);
+                }
+            }
+        } else if (locationData.Choices){
+            if (key == "Rune Clue"){
+                runeClue = true;
+            }
+            if (key == "Rock Item"){
+                rockitem = true;
+            }
+            for(let choice of locationData.Choices) {
+                this.engine.addChoice(choice.Text, choice);
             }
         } else {
             this.engine.addChoice("The end.");

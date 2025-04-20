@@ -73,29 +73,120 @@
             ]
         },
         "Maze Entrance 1": {
-            "Body": "You become a member of the adventurer's guild where you make friends, go on adventures you never thought possible, and become a hero of the land."
-        },
-        "Maze Entrance 2": {
-            "Body": "The alley is filled with sketchy characters, all noticing you as you walk down the alley, obviously sticking out like a sore thumb.",
+            "Body": "As you look at the stones in your pocket you notice they correspond with the pedistals. You place each rock on the center of it's corresponding pedistal as the runes glow brighter with each correctly identified rock. As you place the last rock, the stone door begins to shift upward revealing a new room. You walk into the room and find that it is different, made from stone but not brick, more like concrete with no discernable cracks. You notice in front stand 3 passages that turn in different directions, one left, straight, and right. Which route do you take?",
             "Choices": [
                 {
-                    "Text": "Stay?",
-                    "Target": "Dead"
+                    "Text": "Left",
+                    "Target": "Pit Trap"
                 },
                 {
-                    "Text": "Leave",
-                    "Target": "Market"
+                    "Text": "Straight",
+                    "Target": "Arrow"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "Dead End 1"
                 }
             ]
         },
-        "Golden Mongoose": {
-            "Body": "You finally get to the end of the line where you find it is a restaurant named the Golden Mongoose, the main cook being a real mongoose. It is the best dish you have ever had and from that point forward you dedicate yourself to being as good of a chef as that."
+        "Maze Entrance 2": {
+            "Body": "As you remember the runes on the wall, you recall the order and remember the sequence was only 6 runes. You swiftly press each rune in the corresponding order watching as they glow with the purple hue and as you get the code correctly they glow brighter, enveloping the room in it's blinding light. As you open your eyes again, you notice you are in a new location, seperate of the one you were at before. Here the walls are stone again but they are not constructed of bricks like before. It looks more like concrete but there are no openings in the stone. In front of you stand 3 entryways, each leading a different direction as you look down them. Left, Straight, or Right?",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "Dead End 2"
+                },
+                {
+                    "Text": "Straight",
+                    "Target": "Rune"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "Air Trap"
+                }
+            ]
         },
-        "Food": {
-            "Body": "You ended up buying some good groceries but in the midst of the deals you ended up buying a house! Now you have a place to live and an established start to your life in Neutralia."
+        "Pit Trap": {
+            "Body": "You walk down the left corridor, taking a couple turns and it leads you to a room where there seems to be nothing inside although it hard to see everything without walking fully into the room. Do you wish to walk in? Turn around and take a different route?",
+            "Choices": [
+                {
+                    "Text": "Turn Around",
+                    "Target": "Maze Entrance 1"
+                },
+                {
+                    "Text": "Go Deeper",
+                    "Target": "Fall"
+                }
+            ]
         },
-        "Dead": {
-            "Body": "Well you messed around and found out, you end up getting stabbed and now find yourself bleeding out on the ground."
+        "Air Trap": {
+            "Body": "You walk down the right corridor, after walking for a bit you come upon an empty room for the most part. You look inside and see a rune on the opposite wall faintly glowing. You go in and touch it or you want to just turn back?",
+            "Choices": [
+                {
+                    "Text": "Turn Back",
+                    "Target": "Maze Entrance 2"
+                },
+                {
+                    "Text": "Touch the Rune",
+                    "Target": "Suffocate"
+                }
+            ]
+        },
+        "Dead End 1": {
+            "Body": "You follow the corridor for a ways before suddenly coming to a wall in front of you. Seems you hit a dead end, guess you have to trek your way back.",
+            "Choices": [
+                {
+                    "Text": "Trek Back",
+                    "Target": "Maze Entrance 1"
+                }
+            ]
+        },
+        "Dead End 2": {
+            "Body": "You follow the corridor for a ways before suddenly coming to a wall in front of you. Seems you hit a dead end, guess you have to trek your way back.",
+            "Choices": [
+                {
+                    "Text": "Trek Back",
+                    "Target": "Maze Entrance 2"
+                }
+            ]
+        },
+        "Arrow": {
+            "Body": "As you walk down the corridor for a while you notice that there are wooden signs posted. The sign has an arrow on it and you decide to follow it causiously. As you begin to follow one arrow it leads to another sign with another arrow on it. Do you choose to keep following these arrows? They seem trustworthy thus far, or do you just turn back and take a differnt route?",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Maze Entrance 1"
+                },
+                {
+                    "Text": "Follow the Arrows",
+                    "Target": "Outside 1"
+                }
+            ]
+        },
+        "Rune": {
+            "Body": "You walk down the center corridor, following it for a ways before coming upon a wall. You assume it's a dead end before you look and see that there is a rune on the wall. It glows faintly indicating there is some magic on it but not sure what that magic would do. Do you risk it and touch the rune or just turn back and look for a different route?",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Maze Entrance 2"
+                },
+                {
+                    "Text": "Touch the Rune",
+                    "Target": "Outside 2"
+                }
+            ]
+        },
+        "Fall": {
+            "Body": "As you step deeper into the room, you feel the floor begin to rumble familiarly. However it is too late as the floor falls in on itself. You stare down into the abyss as you get impaled by spikes at the bottom of the pit quickly and swiftly killing you. Leaving your body down there forever to rot without anyone finding you."
+        },
+        "Suffocate": {
+            "Body": "As you reach out your hand to touch the rune, quickly the purple light consumes the room once more. As you are teleported to another room, this room has no windows, no doors, nothing, just pure concrete with no cracks. Your lungs begin to burn as you realize there is no oxygen in here, finally noticing all of the skeletons around you, panic sets in. Freaking out as you run out of air, your muscles losing strength as you finally sit on the ground accepting your fate, closing your eyes. You die becoming one of the many skeletons to litter the floor of this room"
+        },
+        "Outside 1": {
+            "Body": "You decide to trust the arrows, following them causiously, still worried of a threat being at the end. As you walk you notice a light quickly running towards it. As you see the outside grass and meadow. As you exit you breathe in the fresh air and feel the sun on your skin. You turn around to see the exit but where a great dungeon once stood now there is nothing. You question whether there ever was a dungeon as you realize, you left your stuff back at the camp."
+        },
+        "Outside 2": {
+            "Body": "You touch the rune, extending your hand out you watch as that purple light envelops you once more but as you open your eyes you notice that you are now outside, any signs of the dungeon no where to be seen. You search yourself to make sure you have all your stuff but realize that you left everything back at the camp you were at and worse of all...you have no idea where you were teleported out at."
         }
     }
 }
