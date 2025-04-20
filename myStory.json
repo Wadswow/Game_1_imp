@@ -1,0 +1,101 @@
+{
+    "Title": "Dungeon of the Future and Past",
+    "Credits": "Created by Nicholas Wadsworth (nwadswor@ucsc.edu).",
+    "InitialLocation": "Entrance",
+    "Locations": {
+        "Entrance": {
+            "Body": "As an adventurer you live the life of adventure and journey, risk and reward. As you journey, you end up opening up a hole in the ground causing you to fall thunding against the floor. As you groan and look around you find that you have fallen into a dungeon, and an acient one at that. The walls are covered in a slightly glowing moss and vines that hold the bricks in place. If it weren't for the vegetation the dungeon like the hole would have collapsed long ago. You look up through the hole realizing help will not come, at least for a while, you decide the best course of action would be to look around, perhaps for an exit. In front stand two doors, one made of stone and the other made of wood, so adventurer what door do you take?",
+            "Choices": [
+                {
+                    "Text": "Stone Door",
+                    "Target": "Rock Room"
+                },
+                {
+                    "Text": "Wood Door",
+                    "Target": "Magic Room"
+                }
+            ]
+        },
+        "Rock Room": {
+            "Body": "As you enter the room you find 6 standing pedistal standing next to another stone door, this one however does not seem eassy to open and can only be opened by sliding upward. Each pedistal made of a different type of stone, one looks like Onyx, another Diorite. It is unclear what to do to open the door. You do however notice that on the pedistals there seems to be a sequence of runes that glow slightly although nothing happens when you touch them. What now?",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Entrance"
+                },
+                {
+                    "Text": "Examine Runes",
+                    "Target": "Rune Clue"
+                }
+            ],
+            "Hidden": [
+                {
+                    "Text": "Escape",
+                    "Target": "Maze Entrance 1"
+                }
+            ]
+        },
+        "Rune Clue": {
+            "Body": "You examine the runes closely and find that you don't recognize them, they are foreign perhaps of an ancient language. To decipher them would take longer than you have time for. However you commit their shape, order, and sequence to heart.",
+            "Choices": [
+                {
+                    "Text": "Interesting",
+                    "Target": "Rock Room"
+                }
+            ]
+        },
+        "Magic Room": {
+            "Body": "You enter through the wooden door to find what seems more like a more traditional room for a dungeon made out of stone under the earth. The walls are also made out of wood and there isn't much in the room when it comes to furniture or decoration. You find the room covered in runes, nothing you recognize from your studies or from what you have learned on your travels. When you cautiously tap one it glows with a slight purple hue to them, tapping them again turns them off. What you notice is pressing 6 of them turns all of them off giving you pause. You also notice that laying on the floor are several pretty rocks of different material. It is quite mysterious why they lay astrewn the ground especially considering there isn't anything else in the room to denote that someone may have stored them here previously or had left them there. Perhaps it is a code? Perhaps it is simply a riddle? Either way what shall you do?",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Entrance"
+                },
+                {
+                    "Text": "Pick Up the Rocks",
+                    "Target": "Rock Item"
+                }
+            ],
+            "Hidden": [
+                {
+                    "Text": "Escape",
+                    "Target": "Maze Entrance 2"
+                }
+            ]
+        },
+        "Rock Item": {
+            "Body": "You pick up the rocks finding 6 in total, each are made of a differnt stone type but all of them are the same in that they are small, the size of pebbles, and smooth as if polished for a purpose. You place them in your pocket thinking they may be useful",
+            "Choices": [
+                {
+                    "Text": "Interesting",
+                    "Target": "Magic Room"
+                }
+            ]
+        },
+        "Maze Entrance 1": {
+            "Body": "You become a member of the adventurer's guild where you make friends, go on adventures you never thought possible, and become a hero of the land."
+        },
+        "Maze Entrance 2": {
+            "Body": "The alley is filled with sketchy characters, all noticing you as you walk down the alley, obviously sticking out like a sore thumb.",
+            "Choices": [
+                {
+                    "Text": "Stay?",
+                    "Target": "Dead"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Market"
+                }
+            ]
+        },
+        "Golden Mongoose": {
+            "Body": "You finally get to the end of the line where you find it is a restaurant named the Golden Mongoose, the main cook being a real mongoose. It is the best dish you have ever had and from that point forward you dedicate yourself to being as good of a chef as that."
+        },
+        "Food": {
+            "Body": "You ended up buying some good groceries but in the midst of the deals you ended up buying a house! Now you have a place to live and an established start to your life in Neutralia."
+        },
+        "Dead": {
+            "Body": "Well you messed around and found out, you end up getting stabbed and now find yourself bleeding out on the ground."
+        }
+    }
+}
